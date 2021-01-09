@@ -1737,6 +1737,17 @@ SyntaxElementMorph.prototype.labelPart = function (spec) {
                 true // read-only
             );
             break;
+	case '%pie':
+	    var newMath={};
+	    for(let i in Math){
+	    	newMath[i]=i;
+	    }
+            part = new InputSlotMorph(
+                null,
+                false, newMath,
+                true // read-only
+            );
+            break;
         default:
             nop();
         }
