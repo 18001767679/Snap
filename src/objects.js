@@ -1030,6 +1030,12 @@ SpriteMorph.prototype.initBlocks = function () {
         },
 
         // Operators
+	reportMathConstant: {
+            type: 'ring',
+            category: 'operators',
+            spec: '%pie',
+            defaults:[['pi']]
+        },
         reifyScript: {
             type: 'ring',
             category: 'other',
