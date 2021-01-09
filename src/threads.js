@@ -1068,6 +1068,10 @@ Process.prototype.reportScript = function (parameterNames, topBlock) {
     return this.reify(topBlock, parameterNames);
 };
 
+Process.prototype.reportMathConstant = function (con) {
+    return Math[con];
+};
+
 Process.prototype.reifyScript = function (topBlock, parameterNames) {
     return this.reify(topBlock, parameterNames);
 };
