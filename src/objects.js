@@ -8509,6 +8509,8 @@ StageMorph.prototype.blockTemplates = function (category) {
         blocks.push('-');
         blocks.push(block('reportIsA'));
         blocks.push(block('reportIsIdentical'));
+	blocks.push('-');
+        blocks.push(block('reportMathConstant'));
 
         if (true) { // (Process.prototype.enableJS) {
             blocks.push('-');
